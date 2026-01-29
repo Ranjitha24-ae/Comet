@@ -3,38 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Meet COMET 🐾</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ensures scaling -->
   <style>
     body {
       margin: 0;
       font-family: "Comic Sans MS", cursive, sans-serif;
       color: #333;
       text-align: center;
-      background-color: #fff0f5;
-
-      /* ✅ FULL WIDTH ON MOBILE */
-      width: 100%;
-      padding: 12px;
-
-      /* ✅ only restrict width on tablets/desktops */
-      max-width: 480px;
-      margin-left: auto;
-      margin-right: auto;
+      background-color: #fff0f5; /* soft pastel background */
+      padding: 10px;
+      max-width: 360px;   /* lock layout to 360px */
+      margin: 0 auto;     /* center on larger screens */
     }
 
     h1 {
       color: #ff6f61;
-      font-size: 1.6em;
+      font-size: 1.8em; /* smaller for narrow screen */
       text-shadow: 1px 1px 3px #fff;
-      margin: 8px 0 12px;
+      margin-bottom: 10px;
     }
 
     /* Circular photo card */
     .photo-card {
-      width: 160px; /* slightly larger */
-      height: 160px;
-      margin: 0 auto 14px;
+      width: 140px;
+      height: 140px;
+      margin: 0 auto 15px;
       border-radius: 50%;
       overflow: hidden;
       border: 4px solid #fff;
@@ -44,38 +37,37 @@
     .photo-card img {
       width: 100%;
       height: 100%;
-      object-fit: contain; /* ✅ avoids cropping kitten */
+      object-fit: cover;
     }
 
     p.intro {
       font-size: 0.95em;
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 10px 14px;
-      border-radius: 12px;
-      margin: 0 auto 16px;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 8px 12px;
+      border-radius: 10px;
+      display: inline-block;
+      margin-bottom: 15px;
     }
 
     .section {
-      background-color: rgba(255, 255, 255, 0.95);
-      border-radius: 14px;
-      padding: 14px;
-      margin: 14px auto;
-      width: 100%;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      padding: 12px;
+      margin: 15px auto;
+      width: 95%; /* fit inside 360px */
       box-shadow: 1px 1px 8px rgba(0,0,0,0.2);
     }
 
     h2 {
       color: #d14d72;
       font-size: 1.2em;
-      margin-bottom: 8px;
     }
 
     ul {
       list-style: none;
       padding: 0;
-      margin: 0;
       font-size: 0.95em;
-      line-height: 1.5em;
+      line-height: 1.4em;
     }
 
     ul li {
@@ -83,20 +75,20 @@
     }
 
     footer {
-      margin: 18px auto 6px;
+      margin-top: 20px;
       font-size: 0.85em;
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 10px 14px;
-      border-radius: 12px;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 8px 12px;
+      border-radius: 10px;
       display: inline-block;
     }
   </style>
 </head>
-
 <body>
 
   <h1>🐱 Meet COMET!</h1>
 
+  <!-- Circular photo card -->
   <div class="photo-card">
     <img src="https://i.postimg.cc/kGjspZF9/comet1-removebg-preview.png" alt="COMET the kitten">
   </div>
@@ -119,7 +111,7 @@
   </div>
 
   <footer>
-    Made with love 💕
+    Made with love💕 <br>
   </footer>
 
 </body>
